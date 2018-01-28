@@ -10,6 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get("/produtos/remove/{id}", "ProdutoController@remove");
+
 Route::get("/produtos/json", "ProdutoController@listaJson");
 
 Route::post("/produtos/adiciona", "ProdutoController@adiciona");
