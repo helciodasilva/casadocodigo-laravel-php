@@ -10,6 +10,9 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::post("/produtos/adiciona", "ProdutoController@adiciona");
+
+Route::get("/produtos/novo", "ProdutoController@novo");
 
 Route::get("/produtos/mostra/{id}", "ProdutoController@mostra")->where("id", "[0-9]+");
 
