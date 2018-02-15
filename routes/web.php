@@ -29,3 +29,9 @@ Route::get('/', function () {
 Route::get('/outra', function () {
     return "<h1>Outra lógica com Laravel</h1";
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/autenticar', 'LoginController@login');
